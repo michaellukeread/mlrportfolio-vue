@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Landing msg="it works!"/>
+    <Landing/>
     <Projects />
   </div>
 </template>
