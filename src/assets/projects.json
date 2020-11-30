@@ -4,10 +4,8 @@
         "name": "Forest Game",
         "desc": "An immersive environment made with unity. All models, textures and sounds have been created by me. Photoshop and Maya were used for modelling and texturing",
         "img": "forestgame-1.jpg",
-        "link": "/projects",
-        "longDesc": "An Immersive environment made with unity. All models, textures and sounds have been created by me. I used Photoshop to edit photos that I took on my phone for the textures, normal maps, and roughness maps. I used Maya to model all the projects and smartly used the 'send to unity' workflow to easily switch between the two programs. Following a tutorial I added filters, HDR, bloom, and other effects to create a spooky atmosphere. This project was a part of my university degree.",
-        "linkToProject": "https://www.instagram.com/p/CFOCyUTh1dj0sziO1OP3_i70L2mgtilrVciSfk0/",
-        "projectDownload": "https://www.instagram.com/p/CFOCyUTh1dj0sziO1OP3_i70L2mgtilrVciSfk0/",
+        "instagramLink": "https://www.instagram.com/p/CFOCyUTh1dj0sziO1OP3_i70L2mgtilrVciSfk0/",
+        "githubLink": "https://www.instagram.com/p/CFOCyUTh1dj0sziO1OP3_i70L2mgtilrVciSfk0/",
         "type": "Game"
     },
     {
@@ -15,10 +13,8 @@
         "name": "Android App Prototype",
         "desc": "An App that I developed for a university project. This app was designed using Adobe XD and implemented using Angular and Ionic frameworks.",
         "img": "parkopogo-1.jpg",
-        "link": "/projects",
-        "longDesc": "In this project, I created a web app for mobile devices using the frameworks Angular and Ionic. I first created a prototype using Adobe XD so that I had a template to work off and could easily implement the graphical components. Using this methodology I discovered that this workflow enabled me to create the app quite quickly. I had difficulties building the APK enitially, however after powering through and after trial and error, I was able to create a APK build which could be sideloaded onto my OnePlus 5T.",
-        "linkToProject": "https://www.instagram.com/p/CFGTbD8BpVv8HvifjyT1OTGcNzttyjHDnqR7SA0/",
-        "linkToDownload": "https://github.com/michaelreadmonash/parkopogo",
+        "instagramLink": "https://www.instagram.com/p/CFGTbD8BpVv8HvifjyT1OTGcNzttyjHDnqR7SA0/",
+        "githubLink": "https://github.com/michaelreadmonash/parkopogo",
         "type": "UI"
     },
     {
@@ -26,10 +22,8 @@
         "name": "Horror Game",
         "desc": "An immersive environment made with unity. Playmaker plugin used for interactive game elements. Designed to be a horror game experience.",
         "img": "horrorgame-1.jpg",
-        "link": "/projects",
-        "longDesc": "An interactive immersive horror environment where the player tries to escape a haunted house using the tools around himself. This game was developed using unity, maya, photoshop, audacity and playmaker. Adding interactive elements into this environment was very enjoyable and rewarding as it was the first environment I have developed in which the player gets to interact with the surrounding environment. I had difficulties with the lighting system as I had to deal with it rebaking the lights everytime ",
-        "linkToProject": "https://www.instagram.com/p/CFOFPLCBQSl4VxaUEgaBaBypLSdtU-U4_64Aek0/",
-        "linkToDownload": "https://drive.google.com/file/d/1B_vF35MHQUe1K3ykBsSv6n6p34Ewn-CF/view?usp=sharing",
+        "instagramLink": "https://www.instagram.com/p/CFOFPLCBQSl4VxaUEgaBaBypLSdtU-U4_64Aek0/",
+        "githubLink": "https://drive.google.com/file/d/1B_vF35MHQUe1K3ykBsSv6n6p34Ewn-CF/view?usp=sharing",
         "type": "Game"
     },
     {
@@ -37,10 +31,8 @@
         "name": "Portfolio Site",
         "desc": "Using Adobe XD to mockup a rapid prototype for this portfolio website. Vanilla HTML, CSS used and created by myself. NodeJS and Express for backend.",
         "img": "mlrportfolio-1.jpg",
-        "link": "../src/projects",
-        "longDesc": "A portfolio site that hosts a gallary of my projects which can be shown to future employers and for my own learning project. I developed a prototype in Adobe XD, and wrote the website using vanilla HTML and CSS. I used NodeJS, Express for my server backend which enabled me to use embedded javascript (EJS). I used EJS to parse data from the front-end to the backend which is then used to dynamically render content out from a JSON file as well as the URL. This project is still being developed.",
-        "linkToProject": "https://www.instagram.com/p/CFGtnDCBDqBDMKJiJYbqH9QfzenxjybG7pwovM0/",
-        "linkToDownload": "https://www.instagram.com/p/CFGtnDCBDqBDMKJiJYbqH9QfzenxjybG7pwovM0/",
+        "instagramLink": "https://www.instagram.com/p/CFGtnDCBDqBDMKJiJYbqH9QfzenxjybG7pwovM0/",
+        "githubLink": "https://www.instagram.com/p/CFGtnDCBDqBDMKJiJYbqH9QfzenxjybG7pwovM0/",
         "type": "Web"
     },
     {
@@ -48,10 +40,8 @@
         "name": "3D Book",
         "desc": "A book desgined to teach young students the modelling program 123D Design. This was a part of a High School Project. Adobe InDesign, Word, Illustrator",
         "img": "3dbook-1.jpg",
-        "link": "/projects",
-        "longDesc": "A book designed and created by myself for a high school project. The book was designed to teach young students the basics of 3D modelling in 123D Design. The idea of this was so that the students could create models to be printed on the schools 3D printer and enable younger students to develop these new skills that might be harder for the older teachers to share.",
-        "linkToProject": "https://www.instagram.com/p/CFGu7ZrhawsSVKE3x3no-kwgNgQe-GsKMyTZBU0/",
-        "linkToDownload": "https://drive.google.com/file/d/1z6RyyrGGGvj-u9foRG4TivZ1fQunlYCE/view?usp=sharing",
+        "instagramLink": "https://www.instagram.com/p/CFGu7ZrhawsSVKE3x3no-kwgNgQe-GsKMyTZBU0/",
+        "githubLink": "https://drive.google.com/file/d/1z6RyyrGGGvj-u9foRG4TivZ1fQunlYCE/view?usp=sharing",
         "type": "UI"
     },
     {
@@ -59,10 +49,8 @@
         "name": "Charity Motion Graphic",
         "desc": "A motion graphic video designed with Adobe After Effects for a charity organisation. All assets and animation were made by myself",
         "img": "charityanimation-1.jpg",
-        "link": "/projects",
-        "longDesc": "A motion graphic video created in After Effects for the charity OneHealth Organisation. I created the graphics in Illustrator and imported into AE where I animated the paths. I used free music for the animation.",
-        "linkToProject": "https://www.instagram.com/p/CFOBe4gh8og9Mi-NMuFta-QkQ8LRcRWMaR7vbA0/",
-        "linkToDownload": "https://drive.google.com/file/d/1hKMx4tvhZCc4kY36wIAjIsGjcjdNBUOK/view?usp=sharing",
+        "instagramLink": "https://www.instagram.com/p/CFOBe4gh8og9Mi-NMuFta-QkQ8LRcRWMaR7vbA0/",
+        "githubLink": "https://drive.google.com/file/d/1hKMx4tvhZCc4kY36wIAjIsGjcjdNBUOK/view?usp=sharing",
         "type": "UI"
     },
     {
@@ -70,10 +58,8 @@
         "name": "Human Site",
         "desc": "An interactive website for a university project. One of my first websites. HTML, CSS was used with a combination of jQuery for interactive elements.",
         "img": "humansite-1.jpg",
-        "link": "/projects",
-        "longDesc": "A basic website based off of a design brief for university. The idea of the site was to include a wide range of different interactive elements for the user to interact with.",
-        "linkToProject": "https://www.instagram.com/p/CFGhXYdBLzwkW-7vUhHFapmF7iU4n7BPw0S8Rc0/",
-        "linkToDownload": "https://www.instagram.com/p/CFGhXYdBLzwkW-7vUhHFapmF7iU4n7BPw0S8Rc0/",
+        "instagramLink": "https://www.instagram.com/p/CFGhXYdBLzwkW-7vUhHFapmF7iU4n7BPw0S8Rc0/",
+        "githubLink": "https://www.instagram.com/p/CFGhXYdBLzwkW-7vUhHFapmF7iU4n7BPw0S8Rc0/",
         "type": "Web"
     },
     {
@@ -81,10 +67,8 @@
         "name": "Massage Remake",
         "desc": "An interactive website for a university project. One of my first websites. HTML, CSS was used with a combination of jQuery for interactive elements.",
         "img": "mapleleaf-1.jpg",
-        "link": "/projects",
-        "longDesc": "A basic website based off of a design brief for university. The idea of the site was to include a wide range of different interactive elements for the user to interact with.",
-        "linkToProject": "https://www.instagram.com/p/CFGhXYdBLzwkW-7vUhHFapmF7iU4n7BPw0S8Rc0/",
-        "linkToDownload": "https://www.instagram.com/p/CFGhXYdBLzwkW-7vUhHFapmF7iU4n7BPw0S8Rc0/",
+        "instagramLink": "https://www.instagram.com/p/CFGhXYdBLzwkW-7vUhHFapmF7iU4n7BPw0S8Rc0/",
+        "githubLink": "https://www.instagram.com/p/CFGhXYdBLzwkW-7vUhHFapmF7iU4n7BPw0S8Rc0/",
         "type": "Web"
     }
 ]

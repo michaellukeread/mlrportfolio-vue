@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>
-            <ProjectInformation :name='selectedProject.name' :desc='selectedProject.desc' :showProjectInformationClass='toggleState'/>
+            <ProjectInformation :project='selectedProject' :showProjectInformationClass='toggleState'/>
             <div v-on:click='toggleClass()' :class='{crossOverlay: toggleOverlay}' class='cross'>X</div>
             <div v-on:click='toggleClass()' :class='{overlayActive: toggleOverlay}' class='overlay'></div>
         </div>
@@ -71,7 +71,7 @@ export default {
     border-bottom-color: #b3b3b3; }
     .filter-radio:checked + label { background-image: none;  outline: 0; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); background-color: #e0e0e0; }
 
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-template-rows: auto; grid-auto-flow: row dense;}
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); grid-template-rows: auto; grid-auto-flow: row dense;}
     .grid img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; text-align: center; color: white; }
     .grid img:hover { opacity: 20%; cursor: pointer; }
     .grid-element-radio { display: none; }

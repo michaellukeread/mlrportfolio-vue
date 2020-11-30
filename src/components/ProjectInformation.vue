@@ -1,7 +1,14 @@
 <template>
     <div :class='showProjectInformationClass' class='container'>
-        <h1>{{name}}</h1>
-        <p>{{desc}}</p>
+        <h1>{{project.name}}</h1>
+        <img :src='project.img' :alt='project.id'>
+        <p>{{project.desc}}</p>
+        <a :href='project.instagramLink'>
+            <button>Instagram</button>
+        </a>
+        <a :href='project.githubLink'>
+            <button>Git Hub</button>
+        </a>
     </div>
 </template>
 
@@ -9,19 +16,14 @@
 export default {
     name: 'ProjectInformation',
     props: {
-        name: String,
-        desc: String,
+        project: Object,
         showProjectInformationClass: Object
     }
-    //methods: {
-        //toggleOffClass() {
-            //this.showProjectInformationClass = false
-        //}
-    //}
 }
 </script>
 
 <style scoped>
     .container { height: 100%; width: 0; background: coral; position: fixed; z-index: 1; top: 0; left: 0;  transition: 0.8s; overflow: hidden;}
     .toggleClass { width: 50%; opacity: 1; }
+    img { width: 50%; }
 </style>
