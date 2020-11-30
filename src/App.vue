@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Landing/>
-    <Projects />
+    <Projects/>
   </div>
 </template>
 
@@ -24,7 +24,7 @@ export default {
 
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
-    border: border-box;
+    box-sizing: border-box;
     text-align: center;
   }
 

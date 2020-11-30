@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class='container'>
+        <h1>Projects</h1>
         <div>
             <ProjectInformation :project='selectedProject' :showProjectInformationClass='toggleState'/>
             <div v-on:click='toggleClass()' :class='{crossOverlay: toggleOverlay}' class='cross'>X</div>
@@ -62,6 +63,9 @@ export default {
 </script>
 
 <style scoped>
+
+    .container { background-color: #2D3748; padding-top: 5%; padding-bottom: 5%; border-radius: 1.5rem;}
+    h1 { color: white; font-weight: 200; font-size: 3rem;}
 
     .filter { display: flex; flex-direction: row; justify-content: center; list-style: none;}
     .filter-radio { display: none }
