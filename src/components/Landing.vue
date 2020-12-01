@@ -2,10 +2,10 @@
   <div class='container'>
     <h1>Hi, I'm Michael Read</h1>
     <h2>I'm a {{skills[1]}}</h2>
-    <ul>
-      <li><font-awesome-icon :icon="instagram" size="4x" /></li>
-      <li><font-awesome-icon :icon="github" size="4x" /></li>
-    </ul>
+    <div>
+      <font-awesome-icon :icon="instagram" size="4x" />
+      <font-awesome-icon :icon="github" size="4x" />
+    </div>
     <a href="#projects">See My Work</a>
   </div>
 </template>

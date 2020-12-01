@@ -69,15 +69,14 @@ export default {
 <style scoped>
 
     .container { background-color: #2D3748; padding-top: 5%; padding-bottom: 5%; border-radius: 1.5rem;}
-    h1 { color: white; font-weight: 200; font-size: 3rem;}
+    h1 { color: white; font-weight: 200; font-size: 3rem; padding-bottom: 5vh;}
 
-    .filter { display: flex; flex-direction: row; justify-content: center; list-style: none;}
-    .filter-radio { display: none }
-    .filter-radio + label { display: inline-block; margin: -2px; padding: 4px 12px; margin-bottom: 0; font-size: 14px; line-height: 20px;  color: #333; text-align: center;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; cursor: pointer; background-color: #f5f5f5; background-image: linear-gradient(to bottom, #fff, #e6e6e6);
-    background-repeat: repeat-x; border: 1px solid #ccc; border-color: #e6e6e6 #e6e6e6 #bfbfbf; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    border-bottom-color: #b3b3b3; }
-    .filter-radio:checked + label { background-image: none;  outline: 0; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); background-color: #e0e0e0; }
+    .filter { display: flex; flex-direction: row; justify-content: center; list-style: none; margin-bottom: 5vh; padding: 0;}
+    .filter-radio { display: none; }
+    .filter-radio + label { display: inline-block; margin: -2px; padding: .7rem 2.5rem; margin-bottom: 0; font-size: 14px; color: white; text-align: center; cursor: pointer; background-color: #2D3748;
+    border: 1px solid white; transition: 0.5s; border-radius: .5rem; margin-left: .5rem; margin-right: .5rem; text-transform: uppercase; font-weight: 600;}
+    .filter-radio + label:hover{ background-color: white; color: #2D3748; }
+    .filter-radio:checked + label { background-image: none;  outline: 0; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); background-color: #e0e0e0; color: #2D3748;}
 
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); grid-template-rows: auto; grid-auto-flow: row dense;}
     .grid img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; text-align: center; color: white; }

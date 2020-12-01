@@ -1,7 +1,9 @@
 <template>
   <div id="app">
+    <Navbar/>
     <Landing/>
     <Projects/>
+    <Navbar/>
   </div>
 </template>
 
@@ -9,12 +11,14 @@
 
 import Landing from './components/Landing.vue';
 import Projects from './components/Projects.vue';
+import Navbar from './components/Navbar.vue';
 
 export default {
   name: 'App',
   components: {
     Landing,
-    Projects
+    Projects,
+    Navbar
   }
 }
 
