@@ -3,10 +3,10 @@
     <h1>Hi, I'm Michael Read</h1>
     <h2>I'm a {{skills[1]}}</h2>
     <div>
-      <font-awesome-icon :icon="instagram" size="4x" />
-      <font-awesome-icon :icon="github" size="4x" />
+      <font-awesome-icon class='icons' :icon="instagram" size="2x" />
+      <font-awesome-icon class='icons' :icon="github" size="2x" />
     </div>
-    <a href="#projects">See My Work</a>
+    <a class='landing-button' href="#projects">See My Work</a>
   </div>
 </template>
 
@@ -38,4 +38,9 @@ export default {
 
 <style scoped>
   .container { height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+  h1 { font-size: 4rem; margin: 0; padding: 0; font-weight: 300; color: #2D3748; }
+  h2 { font-size: 2.5rem; margin: 0; padding: 0; font-weight: 100; margin-bottom: 1rem; color: #2D3748 }
+  .icons { margin-left: .5rem; margin-right: .5rem; margin-bottom: 1rem; }
+  .landing-button { height: 50px; width: 200px; background-color: #2D3748; text-align: center; transition: .5s; border-radius: .5rem; color: white; text-decoration: none; text-transform: uppercase;  }
+  .landing-button:hover { background-color: green; }
 </style>
