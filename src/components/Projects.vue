@@ -85,8 +85,8 @@ export default {
     .grid-element-radio + img { cursor: pointer; }
 
     .cross { position: fixed; top: 2%; left: 1%; z-index: 1; transition: .5s; opacity: 0;}
-    .crossOverlay { opacity: 1; }
+    .crossOverlay { opacity: 1; cursor: pointer; }
     .overlay { opacity: 0; background-color: black; width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: -1; transition: 0.8s;}
-    .overlayActive { opacity: 0.2; z-index: 0;}
+    .overlayActive { opacity: 0.2; z-index: 0; cursor: crosshair; }
 
 </style>
