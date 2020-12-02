@@ -18,7 +18,7 @@ export default {
             });
         },
         scrollHome() {
-            document.querySelector('.landing').scrollIntoView({
+            document.querySelector('.navbar').scrollIntoView({
                 behavior: 'smooth'
             });
         }

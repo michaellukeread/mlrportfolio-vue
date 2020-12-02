@@ -5,7 +5,7 @@
                 <div class='scroll-wheel-dot'></div>
             </div>
         </div>
-        <h1>Projects</h1>
+        <h1 class='projects'>Projects</h1>
         <div>
             <ProjectInformation :project='selectedProject' :showProjectInformationClass='toggleState'/>
             <font-awesome-icon v-on:click='toggleClass()' :class='{crossOverlay: toggleOverlay}' class='cross' :icon="cross" size="2x" />

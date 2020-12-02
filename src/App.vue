@@ -3,7 +3,7 @@
     <Navbar/>
     <Landing/>
     <Projects/>
-    <Footer/>
+    <Navbar/>
   </div>
 </template>
 
@@ -12,7 +12,7 @@
 import Landing from './components/Landing.vue';
 import Projects from './components/Projects.vue';
 import Navbar from './components/Navbar.vue';
-import Footer from './components/Footer.vue';
+//import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
@@ -20,7 +20,7 @@ export default {
     Landing,
     Projects,
     Navbar,
-    Footer
+    //Footer
   }
 }
 
