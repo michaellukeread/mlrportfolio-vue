@@ -1,7 +1,7 @@
 <template class='landing'>
   <div class='container'>
     <h1>Hi, I'm Michael Read</h1>
-    <h2>I'm a {{skills[1]}}</h2>
+    <h2>I'm a {{skills[2]}}</h2>
     <div>
       <font-awesome-icon class='icons' :icon="instagram" size="2x" />
       <font-awesome-icon class='icons' :icon="github" size="2x" />

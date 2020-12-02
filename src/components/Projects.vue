@@ -1,5 +1,10 @@
 <template>
     <div class='container'>
+        <div class='scroll-wheel'>
+            <div class='scroll-wheel-container'>
+                <div class='scroll-wheel-dot'></div>
+            </div>
+        </div>
         <h1>Projects</h1>
         <div>
             <ProjectInformation :project='selectedProject' :showProjectInformationClass='toggleState'/>
@@ -68,8 +73,8 @@ export default {
 
 <style scoped>
 
-    .container { background-color: #2D3748; padding-top: 5%; padding-bottom: 5%; border-radius: 1.5rem;}
-    h1 { color: white; font-weight: 200; font-size: 3rem; padding-bottom: 5vh;}
+    .container { background-color: #2D3748; padding-top: 3vh; padding-bottom: 5%; border-radius: 1.5rem;}
+    h1 { color: white; font-weight: 200; font-size: 3rem; padding-bottom: 5vh; padding-top: 5vh;}
 
     .filter { display: flex; flex-direction: row; justify-content: center; list-style: none; margin-bottom: 5vh; padding: 0;}
     .filter-radio { display: none; }
@@ -88,5 +93,8 @@ export default {
     .crossOverlay { opacity: 1; cursor: pointer; }
     .overlay { opacity: 0; background-color: black; width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: -1; transition: 0.8s;}
     .overlayActive { opacity: 0.2; z-index: 0; cursor: crosshair; }
+
+    .scroll-wheel { display: flex; justify-content: center; }
+    .scroll-wheel-container { height: 50px; width: 20px; background-color: white; border-radius: .5rem; }
 
 </style>
