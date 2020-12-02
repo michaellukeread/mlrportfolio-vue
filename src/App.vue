@@ -29,7 +29,7 @@ export default {
 <style>
 
   #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     box-sizing: border-box;
     text-align: center;
   }

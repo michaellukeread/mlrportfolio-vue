@@ -1,16 +1,28 @@
 <template>
     <div>
         <ul class='navbar'>
-            <li class='navbar-item'><a href="">Home</a></li>
-            <li class='navbar-item'><a href="">Projects</a></li>
-            <li class='navbar-item'><a href="">About</a></li>
+            <li class='navbar-item' v-on:click='scrollHome()'>Home</li>
+            <li class='navbar-item' v-on:click='scrollProjects()'>Projects</li>
+            <li class='navbar-item' v-on:click='scrollAbout()'>About</li>
         </ul>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Navbar'
+    name: 'Navbar',
+    methods: {
+        scrollProjects() {  
+            document.querySelector(".grid").scrollIntoView({
+                behavior: 'smooth'
+            });
+        },
+        scrollHome() {
+            document.querySelector('.landing').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+  }
 }
 </script>
 

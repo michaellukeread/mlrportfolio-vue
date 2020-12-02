@@ -1,4 +1,4 @@
-<template id='landing'>
+<template class='landing'>
   <div class='container'>
     <h1>Hi, I'm Michael Read</h1>
     <h2>I'm a {{skills[1]}}</h2>
@@ -6,7 +6,7 @@
       <font-awesome-icon class='icons' :icon="instagram" size="2x" />
       <font-awesome-icon class='icons' :icon="github" size="2x" />
     </div>
-    <a class='landing-button' href="#projects">See My Work</a>
+    <button class='landing-button' v-on:click="scroll()">See My Work</button>
   </div>
 </template>
 
@@ -23,6 +23,13 @@ export default {
         'UI/UX Designer',
         'Game Designer'
       ]
+    }
+  },
+  methods: {
+      scroll() {  
+      document.querySelector(".grid").scrollIntoView({
+        behavior: "smooth"
+      });
     }
   },
   computed: {
