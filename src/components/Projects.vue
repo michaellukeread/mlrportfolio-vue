@@ -5,7 +5,7 @@
                 <div class='scroll-wheel-dot'></div>
             </div>
         </div>
-        <h1 class='projects'>Projects</h1>
+        <h1 class='projects-container'>Projects</h1>
         <div>
             <ProjectInformation :project='selectedProject' :showProjectInformationClass='toggleState'/>
             <font-awesome-icon v-on:click='toggleClass()' :class='{crossOverlay: toggleOverlay}' class='cross' :icon="cross" size="2x" />
@@ -21,10 +21,10 @@
             <input class='filter-radio' id='game' type='radio' value='Game' v-model='search'>
             <label for='game'>Game</label>
         </ul>
-        <transition-group class='grid'>
-            <div class='grid-element' v-for="project in filteredProjects" :key="project.id">
-                <label class='project-image-wrapper'>
-                    <input class='grid-element-radio' type='radio' :value='project' v-model='selectedProject' v-on:click="toggleClass()">
+        <transition-group class='projects' name='projects'>
+            <div class='project' v-for="project in filteredProjects" :key="project.id">
+                <label>
+                    <input class='project-radio' type='radio' :value='project' v-model='selectedProject' v-on:click="toggleClass()">
                     <img class='project-image' :src="project.img" :alt="project.id">
                 </label>
             </div>
@@ -83,12 +83,6 @@ export default {
     .filter-radio + label:hover{ background-color: white; color: #2D3748; }
     .filter-radio:checked + label { background-image: none;  outline: 0; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); background-color: #e0e0e0; color: #2D3748;}
 
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); grid-template-rows: auto; grid-auto-flow: row dense; }
-    .grid img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; text-align: center; color: white; }
-    .grid-element {  }
-    .grid-element-radio { display: none; }
-    .grid-element-radio + img { cursor: pointer; }
-
     .cross { position: fixed; top: 2%; left: 1%; z-index: 1; transition: .5s; opacity: 0;}
     .crossOverlay { opacity: 1; cursor: pointer; }
     .overlay { opacity: 0; background-color: black; width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: -1; transition: 0.8s;}
@@ -96,5 +90,16 @@ export default {
 
     .scroll-wheel { display: flex; justify-content: center; }
     .scroll-wheel-container { height: 50px; width: 20px; background-color: white; border-radius: .5rem; }
+
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); grid-template-rows: auto; grid-auto-flow: row dense; }
+    .projects-enter { transform: scale(0.8) translatey(-80px); opacity: 1; }
+    .projects-leave-to{ transform: translatey(30px); opacity: 0; }
+    .projects-leave-active { position: absolute; z-index:-2; }
+
+    .project { transition: all .5s ease-in-out; }
+    .project-image { width: 100%; height: 100%; }
+
+    .project-radio { display: none; }
+    .project-radio + img { cursor: pointer; }
 
 </style>
