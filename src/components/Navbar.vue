@@ -31,7 +31,7 @@ export default {
 
 <style scoped>
     .navbar-container { z-index: 0; }
-    .navbar { list-style: none; display: flex; flex-direction: row; justify-content: center; padding: 0; padding-top: 5vh; margin: 0;}
+    .navbar { list-style: none; display: flex; flex-direction: row; justify-content: center; padding: 0; padding-top: 5vh;padding-bottom: 5vh; margin: 0;}
     .navbar-item { margin-left: 1rem; margin-right: 1rem; text-transform: uppercase; text-decoration: none; color: grey; cursor: pointer; }
     .navbar-item:hover { color: #2D3748; }
 </style>
