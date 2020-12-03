@@ -21,14 +21,14 @@
             <input class='filter-radio' id='game' type='radio' value='Game' v-model='search'>
             <label for='game'>Game</label>
         </ul>
-        <div class='grid'>
+        <transition-group class='grid'>
             <div class='grid-element' v-for="project in filteredProjects" :key="project.id">
-                <label>
+                <label class='project-image-wrapper'>
                     <input class='grid-element-radio' type='radio' :value='project' v-model='selectedProject' v-on:click="toggleClass()">
-                    <img :src="project.img" :alt="project.id">
+                    <img class='project-image' :src="project.img" :alt="project.id">
                 </label>
             </div>
-        </div>
+        </transition-group>
     </div>
 </template>
 
@@ -83,9 +83,9 @@ export default {
     .filter-radio + label:hover{ background-color: white; color: #2D3748; }
     .filter-radio:checked + label { background-image: none;  outline: 0; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); background-color: #e0e0e0; color: #2D3748;}
 
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); grid-template-rows: auto; grid-auto-flow: row dense;}
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); grid-template-rows: auto; grid-auto-flow: row dense; }
     .grid img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; text-align: center; color: white; }
-    .grid img:hover { opacity: 20%; cursor: pointer; }
+    .grid-element {  }
     .grid-element-radio { display: none; }
     .grid-element-radio + img { cursor: pointer; }
 
