@@ -1,14 +1,12 @@
 <template>
-    <div :class='showProjectInformationClass' class='project-container'>
-        <div :class='showprojectinfocontainer' class='project-information-contents'>
+    <span :class='showProjectInformationClass' class='project-container'>
             <h1>{{project.name}}</h1>
-            <img :src='project.img' :alt='project.id'>
+            <img :class='showprojectinfocontainer' :src='project.img' :alt='project.id'>
             <div>
                 <a :href='project.instagramLink'><font-awesome-icon :icon="instagram" size="4x"/></a>
                 <a :href='project.githubLink'><font-awesome-icon :icon="github" size="4x"/></a>
             </div>
-        </div>
-    </div>
+    </span>
 </template>
 
 <script>
@@ -39,4 +37,6 @@ export default {
     .toggleClass { width: 50%; opacity: 1; }
     .toggleClass2 { width: 50%; opacity: 1; }
     img { width: 50%; }
+
+    
 </style>
