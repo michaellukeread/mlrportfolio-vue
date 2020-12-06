@@ -9,7 +9,7 @@
         -->
         <h1 class='projects-container'>Projects</h1>
         <div>
-            <ProjectInformation :project='selectedProject' :showProjectInformationClass='toggleState'/>
+            <ProjectInformation :project='selectedProject' :showProjectInformationClass='toggleState' :showprojectinfocontainer='toggleState2'/>
             <font-awesome-icon v-on:click='toggleClass()' :class='{crossOverlay: toggleOverlay}' class='cross' :icon="cross" size="2x" />
             <div v-on:click='toggleClass()' :class='{overlayActive: toggleOverlay}' class='overlay'></div>
         </div>
@@ -51,13 +51,15 @@ export default {
             search: '',
             selectedProject: '',
             toggleState: {toggleClass: false},
-            toggleOverlay: false
+            toggleOverlay: false,
+            toggleState2: {toggleClass2: false} 
         }
     },
     methods: {
         toggleClass() {
             this.toggleState.toggleClass = !this.toggleState.toggleClass;
             this.toggleOverlay = !this.toggleOverlay;
+            this.toggleState2.toggleClass2 = !this.toggleState2.toggleClass2;
         }
     },    
     computed: {

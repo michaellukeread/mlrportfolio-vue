@@ -13,7 +13,7 @@ export default {
     name: 'Navbar',
     methods: {
         scrollProjects() {  
-            document.querySelector(".scroll-wheel").scrollIntoView({
+            document.querySelector(".projects-container").scrollIntoView({
                 behavior: 'smooth'
             });
         },
