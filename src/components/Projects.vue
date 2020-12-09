@@ -1,18 +1,11 @@
 <template>
     <div class='container'>
-        <!-- 
-        <div class='scroll-wheel'>
-            <div class='scroll-wheel-container'>
-                <div class='scroll-wheel-dot'></div>
-            </div>
-        </div>
-        -->
         <h1 class='projects-container'>Projects</h1>
-        <div>
-            <ProjectInformation :project='selectedProject' :showProjectInformationClass='toggleState' :showprojectinfocontainer='toggleState2'/>
-            <font-awesome-icon v-on:click='toggleClass()' :class='{crossOverlay: toggleOverlay}' class='cross' :icon="cross" size="2x" />
-            <div v-on:click='toggleClass()' :class='{overlayActive: toggleOverlay}' class='overlay'></div>
+
+        <div class='project-container'>
+            <h2>Name</h2>
         </div>
+
         <ul class='filter'>
             <input class='filter-radio' id='all' type='radio' value='' v-model='search'>
             <label for='all'>All</label>
@@ -26,7 +19,7 @@
         <transition-group class='projects' name='projects'>
             <div class='project' v-for="project in filteredProjects" :key="project.id">
                 <label>
-                    <input class='project-radio' type='radio' :value='project' v-model='selectedProject' v-on:click="toggleClass()">
+                    <input class='project-radio' type='radio' :value='project' v-model='selectedProject' v-on:click="toggleProject()">
                     <img class='project-image' :src="project.img" :alt="project.id">
                 </label>
             </div>
@@ -37,31 +30,23 @@
 <script>
 
 import jsonProjects from '../assets/projects.json';
-import ProjectInformation from '../components/ProjectInformation.vue';
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 export default {
     name: 'Projects',
-    components: {
-        ProjectInformation
-    },
     data: function() {
         return {
             projects: jsonProjects,
             search: '',
-            selectedProject: '',
-            toggleState: {toggleClass: false},
-            toggleOverlay: false,
-            toggleState2: {toggleClass2: false} 
+            selectedProject: ''
         }
     },
     methods: {
-        toggleClass() {
-            this.toggleState.toggleClass = !this.toggleState.toggleClass;
-            this.toggleOverlay = !this.toggleOverlay;
-            this.toggleState2.toggleClass2 = !this.toggleState2.toggleClass2;
+        toggleProject() {
+            document.querySelector('.project-container').style.width='40%';
+            document.body.style.overflowY = "hidden";
         }
-    },    
+    }, 
     computed: {
         filteredProjects() {
             return this.projects.filter(project => {
@@ -109,4 +94,6 @@ export default {
     .project-radio { display: none; }
     .project-radio + img { cursor: pointer; }
 
+    .project-container { height: 100vh; width: 0; background:white; position: fixed; z-index: 1; top: 0; left: 0;  transition: 0.8s; overflow-x: hidden; box-shadow: 4px 0px 15px -8px rgba(0,0,0,0.77);     justify-content: center;
+    display: flex; flex-direction: column; align-items: center; }
 </style>
