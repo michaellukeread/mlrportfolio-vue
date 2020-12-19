@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <Navbar/>
-    <Landing/>
-    <Projects/>
-    <Navbar/>
+    <Navbar />
+    <Landing />
+    <Projects />
+    <Navbar />
   </div>
 </template>
 

@@ -3,7 +3,8 @@
         <ul class='navbar'>
             <li class='navbar-item' v-on:click='scrollHome()'>Home</li>
             <li class='navbar-item' v-on:click='scrollProjects()'>Projects</li>
-            <li class='navbar-item' v-on:click='toggleContact()'>Contact</li>
+            <li class='navbar-item' v-on:click='toggleContact()'>Instagram</li>
+            <li class='navbar-item' v-on:click='toggleContact()'>Github</li>
         </ul>
     </div>
 </template>

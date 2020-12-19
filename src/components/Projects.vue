@@ -99,7 +99,7 @@ export default {
 
     /* Projects window */
 
-    .projectContainer { height: 70vh; width: 0; background: white; position: fixed; z-index: 1; top: 50%; transform: translate(-50%, -50%); left: 50%; transition: 0.8s; overflow-x: hidden; box-shadow: 4px 0px 15px -8px rgba(0,0,0,0.77); justify-content: center; display: flex; flex-direction: column; align-items: center; display: flex; flex-direction: column; align-items: center; }
+    .projectContainer { height: 100vh; width: 0; background: white; position: fixed; z-index: 1; top: 50%; transform: translate(-50%, -50%); left: 50%; transition: 0.8s; overflow-x: hidden; box-shadow: 4px 0px 15px -8px rgba(0,0,0,0.77); justify-content: center; display: flex; flex-direction: column; align-items: center; display: flex; flex-direction: column; align-items: center; }
     .projectContainerActive { width: 60vw }
     .projectContainerImgContainer { width: 80%; height: 80%; }
     .projectContainerImg { width: 100%; height: 100%; }
