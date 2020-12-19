@@ -1,9 +1,13 @@
 <template>
     <div class='container'>
         <h1 class='projects-container'>Projects</h1>
+        <div :class='{overlayActive: toggleOverlay }' class='overlay' v-on:click="toggleProject()"></div>
 
-        <div class='project-container'>
-            <h2>Name</h2>
+        <div :class='{projectContainerActive: toggleProjectContainer}' class='projectContainer'>
+            <h2>{{selectedProject.name}}</h2>
+            <div class='projectContainerImgContainer'>
+                <img class='projectContainerImg' :src='selectedProject.img' :alt='selectedProject.id'>
+            </div>
         </div>
 
         <ul class='filter'>
@@ -31,20 +35,26 @@
 
 import jsonProjects from '../assets/projects.json';
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default {
     name: 'Projects',
     data: function() {
         return {
             projects: jsonProjects,
+            toggleOverlay: false,
+            toggleProjectContainer: false,
             search: '',
-            selectedProject: ''
+            selectedProject: '',
+            overflowHidden: 'hidden'
         }
     },
     methods: {
         toggleProject() {
-            document.querySelector('.project-container').style.width='40%';
-            document.body.style.overflowY = "hidden";
+            document.body.style.overflow = this.overflowHidden;
+            this.toggleProjectContainer = !this.toggleProjectContainer;
+            this.toggleOverlay = !this.toggleOverlay;
+            if (this.overflowHidden == 'hidden') { this.overflowHidden = '' } else { this.overflowHidden = 'hidden' }
         }
     }, 
     computed: {
@@ -53,17 +63,21 @@ export default {
                 return project.type.toLowerCase().indexOf(this.search.toLowerCase()) > -1
             })
         },
-        cross() {
-            return faTimes
-        }
+        cross() { return faTimes },
+        instagram () { return faInstagram },
+        github() { return faGithub }
     }
 }
 </script>
 
 <style scoped>
 
+    /* Style on projects container */
+
     .container { background-color: #2D3748; padding-top: 3vh; padding-bottom: 5%; margin-bottom: 1vh;}
     h1 { color: white; font-weight: 200; font-size: 3rem; padding-bottom: 5vh; padding-top: 5vh;}
+
+    /* Filter Styles */
 
     .filter { display: flex; flex-direction: row; justify-content: center; list-style: none; margin-bottom: 5vh; padding: 0;}
     .filter-radio { display: none; }
@@ -72,28 +86,26 @@ export default {
     .filter-radio + label:hover{ background-color: white; color: #2D3748; }
     .filter-radio:checked + label { background-image: none;  outline: 0; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); background-color: #e0e0e0; color: #2D3748;}
 
-    .cross { position: fixed; top: 2%; left: 1%; z-index: 1; transition: .5s; opacity: 0;}
-    .crossOverlay { opacity: 1; cursor: pointer; }
-    .overlay { opacity: 0; background-color: black; width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: -1; transition: 0.8s;}
-    .overlayActive { opacity: 0.2; z-index: 0; cursor: crosshair; }
-
-    /*
-    .scroll-wheel { display: flex; justify-content: center; }
-    .scroll-wheel-container { height: 50px; width: 20px; background-color: white; border-radius: .5rem; display: flex; justify-content: center; align-items: flex-start; }
-    .scroll-wheel-dot { height: 30px; width: 14px; background-color: #2D3748; border-radius: .2rem; margin-top: 5px; margin-bottom: 5px;}
-    */
+    /* Projects Section Styles */
 
     .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); grid-template-rows: auto; grid-auto-flow: row dense; }
     .projects-enter { transform: scale(0.8) translatey(-80px); opacity: 1; }
     .projects-leave-to{ transform: translatey(30px); opacity: 0; }
     .projects-leave-active { position: absolute; z-index:-2; }
-
     .project { transition: all .5s ease-in-out; }
     .project-image { width: 100%; height: 100%; }
-
     .project-radio { display: none; }
     .project-radio + img { cursor: pointer; }
 
-    .project-container { height: 100vh; width: 0; background:white; position: fixed; z-index: 1; top: 0; left: 0;  transition: 0.8s; overflow-x: hidden; box-shadow: 4px 0px 15px -8px rgba(0,0,0,0.77);     justify-content: center;
-    display: flex; flex-direction: column; align-items: center; }
-</style>
+    /* Projects window */
+
+    .projectContainer { height: 70vh; width: 0; background: white; position: fixed; z-index: 1; top: 50%; transform: translate(-50%, -50%); left: 50%; transition: 0.8s; overflow-x: hidden; box-shadow: 4px 0px 15px -8px rgba(0,0,0,0.77); justify-content: center; display: flex; flex-direction: column; align-items: center; display: flex; flex-direction: column; align-items: center; }
+    .projectContainerActive { width: 60vw }
+    .projectContainerImgContainer { width: 80%; height: 80%; }
+    .projectContainerImg { width: 100%; height: 100%; }
+    .cross { position: fixed; top: 2%; left: 1%; z-index: 1; transition: .5s; opacity: 0;}
+    .crossOverlay { opacity: 1; cursor: crosshair; }
+    .overlay { opacity: 0; background-color: black; width: 100%; height: 100%; position: fixed; bottom: 0; left: 0; z-index: -1; transition: .5s;}
+    .overlayActive { opacity: 0.8; cursor: crosshair; z-index: 0; }
+
+    </style>

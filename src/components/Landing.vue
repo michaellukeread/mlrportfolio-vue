@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style scoped>
-  .container { height: 75vh; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+  .container { height: 90vh; display: flex; justify-content: center; align-items: center; flex-direction: column; }
   h1 { font-size: 4rem; margin: 0; padding: 0; font-weight: 400; color: #2D3748; }
   h2 { font-size: 2.5rem; margin: 0; padding: 0; font-weight: 100; margin-bottom: 1rem; color: #2D3748 }
   .icons { margin-left: .5rem; margin-right: .5rem; margin-bottom: 1rem; }
