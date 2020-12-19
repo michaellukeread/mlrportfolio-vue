@@ -70,5 +70,29 @@
         "instagramLink": "https://www.instagram.com/p/CFGhXYdBLzwkW-7vUhHFapmF7iU4n7BPw0S8Rc0/",
         "githubLink": "https://www.instagram.com/p/CFGhXYdBLzwkW-7vUhHFapmF7iU4n7BPw0S8Rc0/",
         "type": "Web"
+    },
+    {
+        "id": 8,
+        "name": "placeholder",
+        "img": "horrorgame-1.jpg",
+        "type": "Game"
+    },
+    {
+        "id": 9,
+        "name": "placeholder",
+        "img": "horrorgame-1.jpg",
+        "type": "Game"
+    },
+    {
+        "id": 10,
+        "name": "placeholder",
+        "img": "mapleleaf-1.jpg",
+        "type": "Web"
+    },
+    {
+        "id": 11,
+        "name": "placeholder",
+        "img": "mapleleaf-1.jpg",
+        "type": "UI"
     }
 ]
