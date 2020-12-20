@@ -3,7 +3,11 @@
     <Navbar />
     <Landing />
     <Projects />
-    <Navbar />
+    <div class='footer'>
+      <Navbar />
+      <Contact />
+    </div>
+    
   </div>
 </template>
 
@@ -12,14 +16,15 @@
 import Landing from './components/Landing.vue';
 import Projects from './components/Projects.vue';
 import Navbar from './components/Navbar.vue';
-//import Footer from './components/Footer.vue';
+import Contact from './components/Contact.vue';
 
 export default {
   name: 'App',
   components: {
     Landing,
     Projects,
-    Navbar
+    Navbar,
+    Contact
   }
 }
 
@@ -35,9 +40,7 @@ export default {
     text-align: center;
   }
 
-  h1 {
-    margin: 0;
-    padding: 0;
-  }
+  h1 { margin: 0; padding: 0; }
+  .footer { display: flex; justify-content: space-around; }
 
 </style>

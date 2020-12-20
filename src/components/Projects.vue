@@ -1,6 +1,6 @@
 <template>
     <div class='container'>
-        <h1 class='projects-container'>Projects</h1>
+        <h1 class='projects-container'>Project Gallery</h1>
         <div :class='{overlayActive: toggleOverlay }' class='overlay' v-on:click="toggleProject()"></div>
 
         <div :class='{projectContainerActive: toggleProjectContainer}' class='projectContainer'>
@@ -100,8 +100,8 @@ export default {
 
     /* Projects window */
 
-    .projectContainer { height: 80%; width: 0; background: white; position: fixed; z-index: 1; top: 50%; transform: translate(-50%, -50%); left: 50%; transition: 0.8s; box-shadow: 4px 0px 15px -8px rgba(0,0,0,0.77); overflow-x: hidden; justify-content: center; display: flex; flex-direction: column; align-items: center; display: flex; flex-direction: column; }
-    .projectContainerActive { width: 60vw }
+    .projectContainer { height: 0; width: 0; background: white; position: fixed; z-index: 1; top: 50%; transform: translate(-50%, -50%); left: 50%; transition: 0.8s; box-shadow: 4px 0px 15px -8px rgba(0,0,0,0.77); overflow-x: hidden; justify-content: center; display: flex; flex-direction: column; align-items: center; display: flex; flex-direction: column; }
+    .projectContainerActive { width: 60vw; height: 80%; }
     .projectContainerImage { width: 50% }
     .cross { position: fixed; top: 2%; left: 1%; z-index: 1; transition: .5s; opacity: 0;}
     .crossOverlay { opacity: 1; cursor: crosshair; }
