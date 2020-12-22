@@ -47,4 +47,6 @@ export default {
     .footer { flex-direction: column; align-items: center; }
   }
 
+  ul { padding: 0; margin: 0; }
+  li { color: #2D3748; }
 </style>

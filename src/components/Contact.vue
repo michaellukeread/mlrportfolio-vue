@@ -1,6 +1,6 @@
 <template>
     <div class='footerContainer'>
-        <font-awesome-icon class='envelope' :icon="envelope" size="2x" />
+        <font-awesome-icon class='envelope' :icon="envelope" size="1x" />
         <p>mread100@gmail.com</p>
     </div>
 </template>
@@ -21,6 +21,6 @@ export default {
 
 .footerContainer { display: flex; flex-direction: row; align-items: center; justify-content: flex-end; }
 .envelope { color: grey; }
-p { margin-left: 1rem; margin-right: 1rem; text-transform: uppercase; text-decoration: none; color: grey; }
+p { margin-left: .5rem; margin-right: .5rem;text-transform: uppercase;  text-decoration: none; color: grey; }
 
 </style>
