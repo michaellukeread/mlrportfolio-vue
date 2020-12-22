@@ -43,4 +43,8 @@ export default {
   h1 { margin: 0; padding: 0; }
   .footer { display: flex; justify-content: space-around; }
 
+  @media only screen and (max-width: 675px) {
+    .footer { flex-direction: column; align-items: center; }
+  }
+
 </style>

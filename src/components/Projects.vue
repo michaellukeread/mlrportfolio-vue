@@ -4,9 +4,10 @@
         <div :class='{overlayActive: toggleOverlay }' class='overlay' v-on:click="toggleProject()"></div>
 
         <div :class='{projectContainerActive: toggleProjectContainer}' class='projectContainer'>
-            <font-awesome-icon v-on:click='toggleProject()' :icon="cross" size="4x" />
+            <font-awesome-icon v-on:click='toggleProject()' class='closeBtn' :icon="cross" size="2x" />
             <h2>{{selectedProject.name}}</h2>
             <p>{{selectedProject.desc}}</p>
+            <img class='projectContainerImage' :src='selectedProject.img' :alt='selectedProject.id'>
             <img class='projectContainerImage' :src='selectedProject.img' :alt='selectedProject.id'>
         </div>
 
@@ -100,13 +101,14 @@ export default {
 
     /* Projects window */
 
-    .projectContainer { height: 0; width: 0; background: white; position: fixed; z-index: 1; top: 50%; transform: translate(-50%, -50%); left: 50%; transition: 0.8s; box-shadow: 4px 0px 15px -8px rgba(0,0,0,0.77); overflow-x: hidden; justify-content: center; display: flex; flex-direction: column; align-items: center; display: flex; flex-direction: column; }
+    .projectContainer { height: 0; width: 0; background: white; position: fixed; z-index: 1; top: 50%; transform: translate(-50%, -50%); left: 50%; transition: 0.5s; box-shadow: 4px 0px 15px -8px rgba(0,0,0,0.77); overflow-x: hidden; display: flex; flex-direction: column; align-items: center; }
     .projectContainerActive { width: 60vw; height: 80%; }
     .projectContainerImage { width: 50% }
-    .cross { position: fixed; top: 2%; left: 1%; z-index: 1; transition: .5s; opacity: 0;}
     .crossOverlay { opacity: 1; cursor: crosshair; }
     .overlay { opacity: 0; background-color: black; width: 100%; height: 100%; position: fixed; bottom: 0; left: 0; z-index: -1; transition: .5s;}
     .overlayActive { opacity: 0.8; cursor: crosshair; z-index: 0; }
+    .closeBtn { position: fixed; left: 15px; top: 10px; color: #2D3748; transition: 0.4s;}
+    .closeBtn:hover { cursor: pointer; color: black; }
 
     /* Customer Scrollbar */
 
