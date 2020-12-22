@@ -5,8 +5,8 @@
 
         <div :class='{projectContainerActive: toggleProjectContainer}' class='projectContainer'>
             <font-awesome-icon v-on:click='toggleProject()' class='closeBtn' :icon="cross" size="2x" />
-            <h2>{{selectedProject.name}}</h2>
-            <p>{{selectedProject.desc}}</p>
+            <h2 class='projectContainerHeading'>{{selectedProject.name}}</h2>
+            <p class='projectContainerDesc'>{{selectedProject.desc}}</p>
             <img class='projectContainerImage' :src='selectedProject.img' :alt='selectedProject.id'>
             <img class='projectContainerImage' :src='selectedProject.img' :alt='selectedProject.id'>
         </div>
@@ -80,16 +80,16 @@ export default {
 
     /* Filter Styles */
 
-    .filter { display: flex; flex-direction: row; justify-content: center; list-style: none; margin-bottom: 5vh; padding: 0;}
+    .filter { display: flex; flex-direction: row; justify-content: center; list-style: none; margin-bottom: 5vh; padding: 0; width: 100%;}
     .filter-radio { display: none; }
-    .filter-radio + label { display: inline-block; margin: -2px; padding: .7rem 2.5rem; margin-bottom: 0; font-size: 14px; color: white; text-align: center; cursor: pointer; background-color: #2D3748;
+    .filter-radio + label { margin: -2px; padding: .7rem 2.5rem; margin-bottom: 0; font-size: 1rem; color: white; text-align: center; cursor: pointer; background-color: #2D3748;
     border: 1px solid white; transition: 0.5s; border-radius: .5rem; margin-left: .5rem; margin-right: .5rem; text-transform: uppercase; font-weight: 600;}
     .filter-radio + label:hover{ background-color: white; color: #2D3748; }
     .filter-radio:checked + label { background-image: none;  outline: 0; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); background-color: #e0e0e0; color: #2D3748;}
 
     /* Projects Section Styles */
 
-    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); grid-template-rows: auto; grid-auto-flow: row dense; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(375px, 1fr)); grid-template-rows: auto; grid-auto-flow: row dense; }
     .projects-enter { transform: scale(0.8) translatey(-80px); opacity: 1; }
     .projects-leave-to{ transform: translatey(30px); opacity: 0; }
     .projects-leave-active { position: absolute; z-index:-2; }
@@ -103,12 +103,14 @@ export default {
 
     .projectContainer { height: 0; width: 0; background: white; position: fixed; z-index: 1; top: 50%; transform: translate(-50%, -50%); left: 50%; transition: 0.5s; box-shadow: 4px 0px 15px -8px rgba(0,0,0,0.77); overflow-x: hidden; display: flex; flex-direction: column; align-items: center; }
     .projectContainerActive { width: 60vw; height: 80%; }
-    .projectContainerImage { width: 50% }
+    .projectContainerImage { width: 80%; padding: 1rem; }
     .crossOverlay { opacity: 1; cursor: crosshair; }
     .overlay { opacity: 0; background-color: black; width: 100%; height: 100%; position: fixed; bottom: 0; left: 0; z-index: -1; transition: .5s;}
     .overlayActive { opacity: 0.8; cursor: crosshair; z-index: 0; }
     .closeBtn { position: fixed; left: 15px; top: 10px; color: #2D3748; transition: 0.4s;}
     .closeBtn:hover { cursor: pointer; color: black; }
+    .projectContainerDesc { width: 70%; }
+    .projectContainerHeading { color: #2D3748; font-size: 2rem; }
 
     /* Customer Scrollbar */
 
@@ -116,5 +118,10 @@ export default {
     ::-webkit-scrollbar-track { background: #f1f1f1; }
     ::-webkit-scrollbar-thumb { background: #888; }
     ::-webkit-scrollbar-thumb:hover { background: #555; }
+
+    @media only screen and (max-width: 1024px) {
+        .projectContainerActive { width: 100%; height: 100%; }
+        .filter-radio + label { padding: .4rem 1.5rem; }
+    }
 
     </style>
