@@ -7,6 +7,7 @@
             <font-awesome-icon v-on:click='toggleProject()' class='closeBtn' :icon="cross" size="2x" />
             <h2 class='projectContainerHeading'>{{selectedProject.name}}</h2>
             <p class='projectContainerDesc'>{{selectedProject.desc}}</p>
+            <a class='projectContainerBtn' :href='selectedProject.githubLink'>Source</a>
             <img class='projectContainerImage' :src='selectedProject.img' :alt='selectedProject.id'>
             <img class='projectContainerImage' :src='selectedProject.img' :alt='selectedProject.id'>
         </div>
@@ -111,6 +112,8 @@ export default {
     .closeBtn:hover { cursor: pointer; color: black; }
     .projectContainerDesc { width: 70%; }
     .projectContainerHeading { color: #2D3748; font-size: 2rem; }
+    .projectContainerBtn { text-decoration: none; margin: -2px; padding: .7rem 2.5rem; margin-bottom: 0; font-size: 1rem; color: white; text-align: center; cursor: pointer; background-color: #2D3748; border: 1px solid white; transition: 0.5s; border-radius: .5rem; margin-left: .5rem; margin-right: .5rem; text-transform: uppercase; font-weight: 600;}
+    .projectContainerBtn:hover { background-color: grey; }
 
     /* Customer Scrollbar */
 
