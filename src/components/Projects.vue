@@ -9,7 +9,6 @@
             <p class='projectContainerDesc'>{{selectedProject.desc}}</p>
             <a class='projectContainerBtn' :href='selectedProject.githubLink'>Source</a>
             <img class='projectContainerImage' :src='selectedProject.img' :alt='selectedProject.id'>
-            <img class='projectContainerImage' :src='selectedProject.img' :alt='selectedProject.id'>
         </div>
 
         <ul class='filter'>
@@ -17,10 +16,10 @@
             <label for='all'>All</label>
             <input class='filter-radio' id='web' type='radio' value='Web' v-model='search'>
             <label for='web'>Web</label>
-            <input class='filter-radio' id='ui' type='radio' value='UI' v-model='search'>
-            <label for='ui'>UI</label>
-            <input class='filter-radio' id='game' type='radio' value='Game' v-model='search'>
-            <label for='game'>Game</label>
+            <input class='filter-radio' id='ui' type='radio' value='App' v-model='search'>
+            <label for='ui'>App</label>
+            <input class='filter-radio' id='game' type='radio' value='Other' v-model='search'>
+            <label for='game'>Other</label>
         </ul>
         <transition-group class='projects' name='projects'>
             <div class='project' v-for="project in filteredProjects" :key="project.id">

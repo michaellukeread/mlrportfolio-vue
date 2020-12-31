@@ -1,33 +1,15 @@
 [
     {
-        "id": 0,
-        "name": "Forest Game",
-        "desc": "An immersive environment made with unity. All models, textures and sounds have been created by me. Photoshop and Maya were used for modelling and texturing",
-        "img": "forestgame-1.jpg",
-        "instagramLink": "https://www.instagram.com/p/CFOCyUTh1dj0sziO1OP3_i70L2mgtilrVciSfk0/",
-        "githubLink": "https://www.instagram.com/p/CFOCyUTh1dj0sziO1OP3_i70L2mgtilrVciSfk0/",
-        "type": "Game"
-    },
-    {
         "id": 1,
         "name": "Android App Prototype",
         "desc": "An App that I developed for a university project. This app was designed using Adobe XD and implemented using Angular and Ionic frameworks.",
         "img": "parkopogo-1.jpg",
         "instagramLink": "https://www.instagram.com/p/CFGTbD8BpVv8HvifjyT1OTGcNzttyjHDnqR7SA0/",
         "githubLink": "https://github.com/michaelreadmonash/parkopogo",
-        "type": "UI"
+        "type": "App"
     },
     {
         "id": 2,
-        "name": "Horror Game",
-        "desc": "An immersive environment made with unity. Playmaker plugin used for interactive game elements. Designed to be a horror game experience.",
-        "img": "horrorgame-1.jpg",
-        "instagramLink": "https://www.instagram.com/p/CFOFPLCBQSl4VxaUEgaBaBypLSdtU-U4_64Aek0/",
-        "githubLink": "https://drive.google.com/file/d/1B_vF35MHQUe1K3ykBsSv6n6p34Ewn-CF/view?usp=sharing",
-        "type": "Game"
-    },
-    {
-        "id": 3,
         "name": "Portfolio Site",
         "desc": "Using Adobe XD to mockup a rapid prototype for this portfolio website. Vanilla HTML, CSS used and created by myself. NodeJS and Express for backend.",
         "img": "mlrportfolio-1.jpg",
@@ -36,25 +18,25 @@
         "type": "Web"
     },
     {
-        "id": 4,
+        "id": 3,
         "name": "3D Book",
         "desc": "A book desgined to teach young students the modelling program 123D Design. This was a part of a High School Project. Adobe InDesign, Word, Illustrator",
         "img": "3dbook-1.jpg",
         "instagramLink": "https://www.instagram.com/p/CFGu7ZrhawsSVKE3x3no-kwgNgQe-GsKMyTZBU0/",
         "githubLink": "https://drive.google.com/file/d/1z6RyyrGGGvj-u9foRG4TivZ1fQunlYCE/view?usp=sharing",
-        "type": "UI"
+        "type": "Other"
     },
     {
-        "id": 5,
+        "id": 4,
         "name": "Charity Motion Graphic",
         "desc": "A motion graphic video designed with Adobe After Effects for a charity organisation. All assets and animation were made by myself",
         "img": "charityanimation-1.jpg",
         "instagramLink": "https://www.instagram.com/p/CFOBe4gh8og9Mi-NMuFta-QkQ8LRcRWMaR7vbA0/",
         "githubLink": "https://drive.google.com/file/d/1hKMx4tvhZCc4kY36wIAjIsGjcjdNBUOK/view?usp=sharing",
-        "type": "UI"
+        "type": "Other"
     },
     {
-        "id": 6,
+        "id": 5,
         "name": "Human Site",
         "desc": "An interactive website for a university project. One of my first websites. HTML, CSS was used with a combination of jQuery for interactive elements.",
         "img": "humansite-1.jpg",
@@ -63,7 +45,7 @@
         "type": "Web"
     },
     {
-        "id": 7,
+        "id": 6,
         "name": "Massage Remake",
         "desc": "An interactive website for a university project. One of my first websites. HTML, CSS was used with a combination of jQuery for interactive elements.",
         "img": "mapleleaf-1.jpg",
@@ -72,27 +54,48 @@
         "type": "Web"
     },
     {
+        "id": 7,
+        "name": "Chamber of Commerence Logo",
+        "desc": "I entered into a logo competition while at school to design the new chamber of commerence logo for my local concil. I won the contest and the logo is being used in practice today.",
+        "img": "wentworthfallslogo-1.jpg",
+        "instagramLink": "",
+        "githubLink": "",
+        "type": "Other"
+    },
+    {
         "id": 8,
-        "name": "placeholder",
-        "img": "horrorgame-1.jpg",
-        "type": "Game"
+        "name": "Mobile Game Prototype",
+        "desc": "I created a mobile application using the software 'Game Maker'. I designed all the artwork for the game as well as wrote original code. This game can be downloaded via contacting me",
+        "img": "iphonegame-1.jpg",
+        "instagramLink": "",
+        "githubLink": "",
+        "type": "App"
     },
     {
         "id": 9,
-        "name": "placeholder",
-        "img": "horrorgame-1.jpg",
-        "type": "Game"
+        "name": "Charity Walk Bib",
+        "desc": "I designed the Blue Mountains Grammar School bibs for a charity walk. I used Adobe InDesign and printing skills to create the bibs for walkers.",
+        "img": "charitywalkbib-1.jpg",
+        "instagramLink": "",
+        "githubLink": "",
+        "type": "Other"
     },
     {
         "id": 10,
-        "name": "placeholder",
-        "img": "mapleleaf-1.jpg",
+        "name": "Kebabzilla Mockup Website",
+        "desc": "I designed a mockup website using Figma to practice my skills and further develop them.",
+        "img": "kebabzilla-1.jpg",
+        "instagramLink": "",
+        "githubLink": "",
         "type": "Web"
     },
     {
         "id": 11,
-        "name": "placeholder",
-        "img": "mapleleaf-1.jpg",
-        "type": "UI"
+        "name": "Lush Cosmetics EDM",
+        "desc": "I prototyped a EDM for lush on mobile and tablet.",
+        "img": "lushapp-1.jpg",
+        "instagramLink": "",
+        "githubLink": "",
+        "type": "App"
     }
 ]

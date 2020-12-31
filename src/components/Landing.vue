@@ -2,7 +2,7 @@
   <div>
     <div class='container'>
       <h1 class='heading'>Hi, I'm Michael Read</h1>
-      <vue-swimlane class='text' :circular='false' :words="['Front-end Developer', 'UI/UX Designer', 'Game Designer', 'Full Stack Developer']" :scale='3' :transitionDelay='1000' ></vue-swimlane>
+      <h2 class='subheading'>Web Developer and Designer</h2>
       <a class='landing-button' v-on:click="scroll()">See My Work</a>
     </div>
     <div>
